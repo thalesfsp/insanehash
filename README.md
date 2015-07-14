@@ -23,10 +23,9 @@ The **lastest SHA3 cryptographic hash algorithm from NIST Hash Competition** bas
 ##How to use **insanehash**?
 Ridiculously, creepily very simple!
 
-1. Download it.
-2. Put the file **in a insanehash directory** (_create one_) at the **node_modules folder**.
-3. Put `var ih = require('insanehash').crypto;`
-4. Call this. You will get a **string** with the hash.
+1. `npm install insanehash`
+2. Put `var ih = require('insanehash').crypto;`
+3. Call this. You will get a **string** with the hash.
   * `ih.blake32('Hi!');` -> 'ceb42cb8ab21fe511b85ecd74933b9f4aafa4d1c67da0778b69e375245942314'
   * `ih.shabal('Hi!');` -> '0427065214b9a8ea2d79c73a1a2d02ea3f9c4f71d4c73a30ad2c0bc8b1c172d9'
   * `ih.bmw('Hi!');` -> '44fe7f399277b09b8e892a80522b833703abacd5fc7f71da6db96999ca4bdb06'
