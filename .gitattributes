@@ -1,0 +1,38 @@
+# It's used to remove files from deployment
+# Usage:
+# git archive master -o latest.zip
+# git archive master | bzip2 -9 > latest.tar.bz2 // high compressed format
+
+# Automatically normalize line endings for all text-based files
+# http://git-scm.com/docs/gitattributes#_end_of_line_conversion
+* text=auto
+
+# Git specific
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Directories
+lib export-ignore
+node_modules export-ignore
+
+# Files
+index.js export-ignore
+Makefile export-ignore
+package.json export-ignore
+README.md export-ignore
+test.js export-ignore
+test.sh export-ignore
+
+# For the following file types, normalize line endings to LF on
+# checkin and prevent conversion to CRLF when they are checked out
+# (this is required in order to prevent newline related issues like,
+# for example, after the build script is run)
+.*      text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.sh    text eol=lf
+*.txt   text eol=lf
+*.xml   text eol=lf
