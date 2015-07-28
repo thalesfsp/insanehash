@@ -45,13 +45,23 @@ _Note: Use **single quotes** for the text!_
 
 ## What's about tests?
 
-Clone this repository, so:
+Clone this repository and choose your flavor (GNU Make, NPM or direct):
 
-- To run both CLI and package tests: `make test` or `npm run test`
-- To run only CLI tests: `make testCLI` or `npm run test:cli`
-- To run only package tests: `make testPackage` or `npm run test:package`
+- To run both CLI and package tests:
+	- `make test`
+	- `npm run test`
+- To run only CLI tests:
+	- `make testCLI`
+	- `npm run test:cli`
+	- `./test.sh`
+	- `sh test.sh`
+- To run only package tests:
+	- `make testPackage`
+	- `npm run test:package`
+	- `./node_modules/mocha/bin/mocha test.js`
 
 _Notes:_
 
 - _test.sh should be **755**. If don't just run `chmod a+x test.sh`_
-- _make requires GNU Make_
+- _make requires [GNU Make](http://www.gnu.org/software/make/)_
+- _package test requires [Mocha](https://github.com/mochajs/mocha)_
