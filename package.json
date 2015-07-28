@@ -1,17 +1,38 @@
 {
   "name": "insanehash",
   "description": "Use the lastest SHA3 cryptographic hash algorithm from NIST Hash Competition based on Chris Drost implementation",
-  "keywords": ["hash","cryptography","NIST","SHA3"],
-  "repository": {"type": "git", "url": "git@github.com:thalesfsp/insanehash.git"},
-  "version": "0.0.3",
+  "keywords": [
+    "hash",
+    "cryptography",
+    "NIST",
+    "SHA3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thalesfsp/insanehash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thalesfsp/insanehash/issues"
+  },
+  "version": "0.0.4",
   "homepage": "https://github.com/thalesfsp/insanehash",
   "author": "thalesfsp <thalesfsp@gmail.com>",
+  "contributors": [{
+    "name": "thalesfsp",
+    "email": "thalesfsp@gmail.com"
+  }],
   "maintainers": "thalesfsp <thalesfsp@gmail.com>",
   "directories": {},
-  "engines": {"node": ">= 0.4.8"},
-  "dependencies": {},
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.3"
+  },
+  "dependencies": {
+    "commander": "^2.8.1"
+  },
   "main": "./index",
   "scripts": {
+    "test": "./test.sh",
     "git:push": "git add --all && git commit --signoff && git push"
   }
 }
