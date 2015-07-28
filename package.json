@@ -3,7 +3,7 @@
   "description": "Use the lastest SHA3 cryptographic hash algorithm from NIST Hash Competition based on Chris Drost implementation",
   "keywords": ["hash","cryptography","NIST","SHA3"],
   "repository": {"type": "git", "url": "git@github.com:thalesfsp/insanehash.git"},
-  "version": "0.0.1",
+  "version": "0.0.2",
   "time": {"0.0.1": "2011-10-07T20:32:17.656Z"},
   "homepage": "https://github.com/thalesfsp/insanehash",
   "author": "thalesfsp <thalesfsp@gmail.com>",

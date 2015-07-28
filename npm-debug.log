@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.13.2
+3 info using node@v0.12.4
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/cwaq/Temp/insanehash',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/cwaq/.npm/insanehash/0.0.1/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/cwaq/.npm/insanehash/0.0.1/package.tgz',
+10 verbose tar pack   '/Users/cwaq/Temp/insanehash' ]
+11 verbose tarball /Users/cwaq/.npm/insanehash/0.0.1/package.tgz
+12 verbose folder /Users/cwaq/Temp/insanehash
+13 info prepublish insanehash@0.0.1
+14 verbose addLocalTarball adding from inside cache /Users/cwaq/.npm/insanehash/0.0.1/package.tgz
+15 silly cache afterAdd insanehash@0.0.1
+16 verbose afterAdd /Users/cwaq/.npm/insanehash/0.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/cwaq/.npm/insanehash/0.0.1/package/package.json written
+18 silly publish { name: 'insanehash',
+18 silly publish   description: 'Use the lastest SHA3 cryptographic hash algorithm from NIST Hash Competition based on Chris Drost implementation',
+18 silly publish   keywords: [ 'hash', 'cryptography', 'NIST', 'SHA3' ],
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+ssh://git@github.com/thalesfsp/insanehash.git' },
+18 silly publish   version: '0.0.1',
+18 silly publish   time: { '0.0.1': '2011-10-07T20:32:17.656Z' },
+18 silly publish   homepage: 'https://github.com/thalesfsp/insanehash',
+18 silly publish   author: { name: 'thalesfsp', email: 'thalesfsp@gmail.com' },
+18 silly publish   maintainers: 'thalesfsp <thalesfsp@gmail.com>',
+18 silly publish   directories: {},
+18 silly publish   engines: { node: '>= 0.4.8' },
+18 silly publish   dependencies: {},
+18 silly publish   main: './index',
+18 silly publish   readme: '#Your search over!\n\n* Do you need a **fast** and **seriously** cryptography?\n* Do you think that **MD6 is too old** (*and poor*) and want something like the **finalists of the CHAC** (Cryptographic Hash Algorithm Competition) of NIST for **SHA3**?\n* Do you use the **NodeJS**, knows that there is good libraries out there, but what you **really want** is something **cutting edge**?\n\nSo **relax**, because your dream **was realized**! :)\nMeet **InsaneHash** (soon in the `npm install -g` closer to you).\n\n## OK! What\'s **insanehash?**\nThe **lastest SHA3 cryptographic hash algorithm from NIST Hash Competition** based on [**Chris Drost implementation**](https://github.com/drostie/sha3-js) writed in **Javascript** and for **NodeJS**\n\n## About algorithms:\n\n* **BLAKE**, by Aumasson, Henzen, Meier, and Phan\n* **BMW (Blue Midnight Wish)**, by Gligoroski, Klima, Knapskog, El-Hadedy, Amundsen, and Mjølsnes\n* **CubeHash**, by Dan Bernstein.\n* **Keccak**, by Bertoni, Daemen, Peeters, and van Assche\n* **Shabal**, by Bresson, Canteaut, Chevalier-Mames, Clavier, Fuhr, Gouget, Icart, Misarsky, Plasencia, Paillier, Pornin, Reinhard, Thuillet, and Videau\n* **Skein**, by Bellare, Callas, Ferguson, Kohno, Lucks, Schneier, Walker, and Whiting\n* **Half Skein**, a 32-bit Skein-256-256 (non-compliant) version\n\n##How to use **insanehash**?\nRidiculously, creepily very simple!\n\n1. `npm install insanehash`\n2. Put `var ih = require(\'insanehash\').crypto;`\n3. Call this. You will get a **string** with the hash.\n  * `ih.blake32(\'Hi!\');` -> \'ceb42cb8ab21fe511b85ecd74933b9f4aafa4d1c67da0778b69e375245942314\'\n  * `ih.shabal(\'Hi!\');` -> \'0427065214b9a8ea2d79c73a1a2d02ea3f9c4f71d4c73a30ad2c0bc8b1c172d9\'\n  * `ih.bmw(\'Hi!\');` -> \'44fe7f399277b09b8e892a80522b833703abacd5fc7f71da6db96999ca4bdb06\'\n  * `ih.skein(\'Hi!\');` -> \'6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30\'\n  * `ih.cubehash(\'Hi!\');` -> \'a206bffa3c77a6410270f061e6b264fd79d1a997c06d444ee1bba42cff2b66d3\'\n  * `ih.halfskein(\'Hi!\');` -> \'39edf053bf6be95f1af2476f83fbf9b71fa0e3188361def18c879a9f09370f8a\'\n  * `ih.keccak(\'Hi!\');` -> \'22dd5d47d9cb35a05e3022a7bac1a39547da7b303aba89cbe9205046d1f0762c\'\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '67cd38ee383998afb52b7d675a38c9a7b5d46821',
+18 silly publish   bugs: { url: 'https://github.com/thalesfsp/insanehash/issues' },
+18 silly publish   _id: 'insanehash@0.0.1',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '97bea2e1450792a45697809730e333c1ff4f8cc7',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name insanehash
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/insanehash
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/cwaq/.npm/insanehash/0.0.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/insanehash
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 11:21:15
+29 verbose request using bearer token for auth
+30 verbose request id 1ae447ed4b45d176
+31 http request PUT https://registry.npmjs.org/insanehash
+32 http 403 https://registry.npmjs.org/insanehash
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '128',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 28 Jul 2015 18:21:16 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lax1429-LAX',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1438107675.756949,VS0,VE1226' }
+34 verbose request invalidating /Users/cwaq/.npm/registry.npmjs.org/insanehash on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.1. Try bumping the version to 1.0.0" : insanehash
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:197:22)
+36 verbose stack     at Request.emit (events.js:110:17)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1050:14)
+36 verbose stack     at Request.emit (events.js:129:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:996:12)
+36 verbose stack     at IncomingMessage.emit (events.js:129:20)
+36 verbose stack     at _stream_readable.js:908:16
+36 verbose stack     at process._tickCallback (node.js:355:11)
+37 verbose statusCode 403
+38 verbose pkgid insanehash
+39 verbose cwd /Users/cwaq/Temp/insanehash
+40 error Darwin 14.4.0
+41 error argv "node" "/usr/local/bin/npm" "publish"
+42 error node v0.12.4
+43 error npm  v2.13.2
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.1. Try bumping the version to 1.0.0" : insanehash
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
