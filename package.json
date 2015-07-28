@@ -11,5 +11,8 @@
   "directories": {},
   "engines": {"node": ">= 0.4.8"},
   "dependencies": {},
-  "main": "./index"
+  "main": "./index",
+  "scripts": {
+    "git:push": "git add --all && git commit --signoff && git push"
+  }
 }

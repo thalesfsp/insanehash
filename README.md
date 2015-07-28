@@ -8,7 +8,7 @@ So **relax**, because your dream **was realized**! :)
 Meet **InsaneHash** (soon in the `npm install -g` closer to you).
 
 ## OK! What's **insanehash?**
-The **lastest SHA3 cryptographic hash algorithm from NIST Hash Competition** based on [**Chris Drost implementation**](https://github.com/drostie/sha3-js) writed in **Javascript** and for **NodeJS**
+The **lastest SHA3 cryptographic hash algorithm from NIST Hash Competition** [1](http://www.nist.gov/itl/csd/sha-100212.cfm) [2](http://csrc.nist.gov/groups/ST/hash/sha-3/winner_sha-3.html) based on [**Chris Drost implementation**](https://github.com/drostie/sha3-js) writed in **Javascript** and for **NodeJS**
 
 ## About algorithms:
 
@@ -24,7 +24,7 @@ The **lastest SHA3 cryptographic hash algorithm from NIST Hash Competition** bas
 Ridiculously, creepily very simple!
 
 1. `npm install insanehash`
-2. Put `var ih = require('insanehash').crypto;`
+2. Put `var ih = require('insanehash');`
 3. Call this. You will get a **string** with the hash.
   * `ih.blake32('Hi!');` -> 'ceb42cb8ab21fe511b85ecd74933b9f4aafa4d1c67da0778b69e375245942314'
   * `ih.shabal('Hi!');` -> '0427065214b9a8ea2d79c73a1a2d02ea3f9c4f71d4c73a30ad2c0bc8b1c172d9'
