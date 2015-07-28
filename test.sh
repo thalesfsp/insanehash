@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-### Tests for insanehash
+### Tests for the CLI version of insanehash
 # Author: Thales Pinheiro
 # Since: 07/28/2015
 # Basic usage:

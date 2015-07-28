@@ -17,10 +17,12 @@
   "version": "0.0.4",
   "homepage": "https://github.com/thalesfsp/insanehash",
   "author": "thalesfsp <thalesfsp@gmail.com>",
-  "contributors": [{
-    "name": "thalesfsp",
-    "email": "thalesfsp@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "thalesfsp",
+      "email": "thalesfsp@gmail.com"
+    }
+  ],
   "maintainers": "thalesfsp <thalesfsp@gmail.com>",
   "directories": {},
   "license": "MIT",
@@ -28,11 +30,17 @@
     "node": ">= 0.10.3"
   },
   "dependencies": {
-    "commander": "^2.8.1"
+    "commander": "^2.8.1",
+    "mocha": "^2.2.5"
   },
-  "main": "./index",
+  "main": "lib/insanehash.js",
+  "bin": {
+    "insanehash": "./lib/insanehash.js"
+  },
   "scripts": {
-    "test": "./test.sh",
+    "test": "./test.sh && ./node_modules/mocha/bin/mocha test.js",
+    "test:cli": "./test.sh",
+    "test:package": "./node_modules/mocha/bin/mocha test.js",
     "git:push": "git add --all && git commit --signoff && git push"
   }
 }
