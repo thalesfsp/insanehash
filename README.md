@@ -1,4 +1,4 @@
-
+[![build status](http://ci.audaci.us:8072/projects/3/status.png?ref=master)](http://ci.audaci.us:8072/projects/3?ref=master)
 
 # Your search over!
 
