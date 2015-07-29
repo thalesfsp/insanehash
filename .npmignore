@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+npm-debug.log
+.gitattributes
+.gitignore
+lib
+index.js
+Makefile
+package.json
+README.md
+test.js
+test.sh
