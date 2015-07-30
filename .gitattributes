@@ -12,10 +12,10 @@
 .gitignore export-ignore
 
 # CI files
-.gitlab-ci.yml
+.gitlab-ci.yml export-ignore
 
 # NPM files
-.npmignore
+.npmignore export-ignore
 
 # Directories
 lib export-ignore
