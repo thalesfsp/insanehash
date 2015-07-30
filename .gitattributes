@@ -11,6 +11,12 @@
 .gitattributes export-ignore
 .gitignore export-ignore
 
+# CI files
+.gitlab-ci.yml
+
+# NPM files
+.npmignore
+
 # Directories
 lib export-ignore
 node_modules export-ignore
@@ -18,8 +24,6 @@ node_modules export-ignore
 # Files
 index.js export-ignore
 Makefile export-ignore
-package.json export-ignore
-README.md export-ignore
 test.js export-ignore
 test.sh export-ignore
 
