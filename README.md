@@ -2,7 +2,6 @@
 
 Since: 10/07/2011   
 Author: Thales Pinheiro   
-[![build status](http://ci.audaci.us:8072/projects/3/status.png?ref=master)](http://ci.audaci.us:8072/projects/3?ref=master)
 
 ## Abstraction
 
