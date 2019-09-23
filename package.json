@@ -17,12 +17,10 @@
   "version": "0.1.1",
   "homepage": "https://github.com/thalesfsp/insanehash",
   "author": "thalesfsp <thalesfsp@gmail.com>",
-  "contributors": [
-    {
-      "name": "thalesfsp",
-      "email": "thalesfsp@gmail.com"
-    }
-  ],
+  "contributors": [{
+    "name": "thalesfsp",
+    "email": "thalesfsp@gmail.com"
+  }],
   "maintainers": [
     "thalesfsp <thalesfsp@gmail.com>"
   ],
@@ -39,7 +37,7 @@
     "insanehash": "./bin/insanehash.js"
   },
   "scripts": {
-    "test": "npm run test:cli && npm run test:package ",
+    "test": "npm run test:cli && npm run test:package",
     "test:cli": "./test.sh",
     "test:package": "npm run build && nyc --clean mocha test.js",
     "build": "terser --compress --mangle --output bin/insanehash.js lib/insanehash.js"
