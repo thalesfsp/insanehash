@@ -1,4 +1,4 @@
-![](https://github.com/thalesfsp/insanehash/workflows/Node%20CI/badge.svg) [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![ci](https://github.com/thalesfsp/insanehash/workflows/Node%20CI/badge.svg) [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![npm](https://img.shields.io/npm/v/insanehash) ![coverage](https://img.shields.io/badge/coverage-98.52%25-blue)
 
 # InsaneHash
 
