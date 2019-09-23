@@ -1,3 +1,5 @@
+![](https://github.com/thalesfsp/insanehash/workflows/Node%20CI/badge.svg) [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 # InsaneHash
 
 Since: 10/07/2011   
