@@ -38,103 +38,103 @@
 
 # Runs tests for the short version of options
 
-echo 'Using short version of options and hashing "aáâã09!?.,<>":';
+echo 'Using short version of options and hashing "aáâã09!?.,<>":'
 
-IHTB=$(node lib/insanehash.js -b 'aáâã09!?.,<>');
-echo "blake32: " $IHTB;
+IHTB=$(node bin/insanehash.js -b 'aáâã09!?.,<>')
+echo "blake32: " $IHTB
 
-IHTM=$(node lib/insanehash.js -m 'aáâã09!?.,<>');
-echo "bmw: " $IHTM;
+IHTM=$(node bin/insanehash.js -m 'aáâã09!?.,<>')
+echo "bmw: " $IHTM
 
-IHTC=$(node lib/insanehash.js -c 'aáâã09!?.,<>');
-echo "cubehash: " $IHTC;
+IHTC=$(node bin/insanehash.js -c 'aáâã09!?.,<>')
+echo "cubehash: " $IHTC
 
-IHTS=$(node lib/insanehash.js -s 'aáâã09!?.,<>');
-echo "skein: " $IHTS;
+IHTS=$(node bin/insanehash.js -s 'aáâã09!?.,<>')
+echo "skein: " $IHTS
 
-IHTK=$(node lib/insanehash.js -k 'aáâã09!?.,<>');
-echo "halfskein: " $IHTK;
+IHTK=$(node bin/insanehash.js -k 'aáâã09!?.,<>')
+echo "halfskein: " $IHTK
 
-IHTA=$(node lib/insanehash.js -a 'aáâã09!?.,<>');
-echo "shabal: " $IHTA;
+IHTA=$(node bin/insanehash.js -a 'aáâã09!?.,<>')
+echo "shabal: " $IHTA
 
-IHTE=$(node lib/insanehash.js -e 'aáâã09!?.,<>');
-echo "keccak: " $IHTE;
+IHTE=$(node bin/insanehash.js -e 'aáâã09!?.,<>')
+echo "keccak: " $IHTE
 
 # Runs tests for the long version of options
 
-echo && echo 'Using long version of options and hashing "aáâã09!?.,<>":';
+echo && echo 'Using long version of options and hashing "aáâã09!?.,<>":'
 
-IHTBlake32=$(node lib/insanehash.js --blake32 'aáâã09!?.,<>');
-echo "blake32: " $IHTBlake32;
+IHTBlake32=$(node bin/insanehash.js --blake32 'aáâã09!?.,<>')
+echo "blake32: " $IHTBlake32
 
-IHTBmw=$(node lib/insanehash.js --bmw 'aáâã09!?.,<>');
-echo "bmw: " $IHTBmw;
+IHTBmw=$(node bin/insanehash.js --bmw 'aáâã09!?.,<>')
+echo "bmw: " $IHTBmw
 
-IHTCubehash=$(node lib/insanehash.js --cubehash 'aáâã09!?.,<>');
-echo "cubehash: " $IHTCubehash;
+IHTCubehash=$(node bin/insanehash.js --cubehash 'aáâã09!?.,<>')
+echo "cubehash: " $IHTCubehash
 
-IHTSkein=$(node lib/insanehash.js --skein 'aáâã09!?.,<>');
-echo "skein: " $IHTSkein;
+IHTSkein=$(node bin/insanehash.js --skein 'aáâã09!?.,<>')
+echo "skein: " $IHTSkein
 
-IHTHalfskein=$(node lib/insanehash.js --halfskein 'aáâã09!?.,<>');
-echo "halfskein: " $IHTHalfskein;
+IHTHalfskein=$(node bin/insanehash.js --halfskein 'aáâã09!?.,<>')
+echo "halfskein: " $IHTHalfskein
 
-IHTShabal=$(node lib/insanehash.js --shabal 'aáâã09!?.,<>');
-echo "shabal: " $IHTShabal;
+IHTShabal=$(node bin/insanehash.js --shabal 'aáâã09!?.,<>')
+echo "shabal: " $IHTShabal
 
-IHTKeccak=$(node lib/insanehash.js --keccak 'aáâã09!?.,<>');
-echo "keccak: " $IHTKeccak;
+IHTKeccak=$(node bin/insanehash.js --keccak 'aáâã09!?.,<>')
+echo "keccak: " $IHTKeccak
 
 # Comparing the two versions
 
-echo && echo 'Comparing the two versions:';
+echo && echo 'Comparing the two versions:'
 
 if [ "$IHTB" == "$IHTBlake32" ]; then
   echo "blake32: OK"
 else
-  echo "blake32: NOK";
-  exit 1;
+  echo "blake32: NOK"
+  exit 1
 fi
 
 if [ "$IHTM" == "$IHTBmw" ]; then
   echo "bmw: OK"
 else
-  echo "bmw: NOK";
-  exit 1;
+  echo "bmw: NOK"
+  exit 1
 fi
 
 if [ "$IHTC" == "$IHTCubehash" ]; then
   echo "cubehash: OK"
 else
-  echo "cubehash: NOK";
-  exit 1;
+  echo "cubehash: NOK"
+  exit 1
 fi
 
 if [ "$IHTS" == "$IHTSkein" ]; then
   echo "skein: OK"
 else
-  echo "skein: NOK";
-  exit 1;
+  echo "skein: NOK"
+  exit 1
 fi
 
 if [ "$IHTK" == "$IHTHalfskein" ]; then
   echo "halfskein: OK"
 else
-  echo "halfskein: NOK";
-  exit 1;
+  echo "halfskein: NOK"
+  exit 1
 fi
 
 if [ "$IHTA" == "$IHTShabal" ]; then
   echo "shabal: OK"
 else
-  echo "shabal: NOK";
-  exit 1;
+  echo "shabal: NOK"
+  exit 1
 fi
 
 if [ "$IHTE" == "$IHTKeccak" ]; then
   echo "keccak: OK"
 else
-  echo "keccak: NOK";
-  exit 1;
+  echo "keccak: NOK"
+  exit 1
 fi

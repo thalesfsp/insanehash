@@ -1,13 +1,24 @@
+# Directories
 node_modules
+lib
+coverage
+.nyc_output
+.github
+
+# OS Files
 .DS_Store
-npm-debug.log
+
+# Git Files
 .gitattributes
 .gitignore
+
+# NPM Files
 .npmignore
-lib
-index.js
-Makefile
-package.json
-README.md
+
+# CI Files
+.gitlab-ci.yml
+
+# Files
+npm-debug.log
 test.js
-test.sh
+benchmark.js

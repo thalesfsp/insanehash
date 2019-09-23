@@ -17,30 +17,34 @@
   "version": "0.1.0",
   "homepage": "https://github.com/thalesfsp/insanehash",
   "author": "thalesfsp <thalesfsp@gmail.com>",
-  "contributors": [
-    {
-      "name": "thalesfsp",
-      "email": "thalesfsp@gmail.com"
-    }
+  "contributors": [{
+    "name": "thalesfsp",
+    "email": "thalesfsp@gmail.com"
+  }],
+  "maintainers": [
+    "thalesfsp <thalesfsp@gmail.com>"
   ],
-  "maintainers": "thalesfsp <thalesfsp@gmail.com>",
   "directories": {},
-  "license": "CC-BY-SA-4.0",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.10.3"
   },
   "dependencies": {
-    "commander": "^2.8.1",
-    "mocha": "^2.2.5"
+    "commander": "^2.8.1"
   },
   "main": "bin/insanehash.js",
   "bin": {
     "insanehash": "./bin/insanehash.js"
   },
   "scripts": {
-    "test": "./test.sh && ./node_modules/mocha/bin/mocha test.js",
+    "test": "npm run test:cli && npm run test:package ",
     "test:cli": "./test.sh",
-    "test:package": "./node_modules/mocha/bin/mocha test.js",
-    "git:push": "git add --all && git commit --signoff && git push"
+    "test:package": "npm run build && nyc --clean mocha test.js",
+    "build": "terser --compress --mangle --output bin/insanehash.js lib/insanehash.js"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "terser": "^4.3.1"
   }
 }
