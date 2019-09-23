@@ -14,13 +14,15 @@
   "bugs": {
     "url": "https://github.com/thalesfsp/insanehash/issues"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/thalesfsp/insanehash",
   "author": "thalesfsp <thalesfsp@gmail.com>",
-  "contributors": [{
-    "name": "thalesfsp",
-    "email": "thalesfsp@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "thalesfsp",
+      "email": "thalesfsp@gmail.com"
+    }
+  ],
   "maintainers": [
     "thalesfsp <thalesfsp@gmail.com>"
   ],
