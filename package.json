@@ -45,8 +45,8 @@
     "build": "terser --compress --mangle --output bin/insanehash.js lib/insanehash.js"
   },
   "devDependencies": {
-    "mocha": "^6.2.0",
-    "nyc": "^14.1.1",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
     "terser": "^4.3.1"
   }
 }
